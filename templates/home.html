@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <style>
+       .body
+        {
+            margin-top: 20%;
+        text-align:center;
+        }
+    </style>
+</head>
+    <body>
+    {% load static %}
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}}" role="document">
+        <p>{{message}}</p>
+    </div>
+    {% endfor %}
+    <div class="body">
+
+        <!--<img src="{{ STATIC_URL}}/images/school.jpg" height="200px" width="200px">-->
+        <a href="{% url 'register' data='register' %}"><button class="btn btn-primary">register</button></a>
+        <a href="{% url 'signin' data='signin' %}"><button class="btn btn-primary">signin</button></a>
+        </div>
+    </body>
+</html>

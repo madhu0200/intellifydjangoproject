@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teacher profile page</title>
+</head>
+<style>
+    b
+    {
+        margin-left: 20px;
+    }
+    div
+    {
+        display: inline;
+        text-align: center;
+       
+    }
+    img
+    {
+        float: left;
+    }
+</style>
+<body>
+<div>
+    
+        <img src="{{context.profile_pic.url}}" style="height:300px;width:50%px;"><br><br>
+   
+    <b>first name :</b>{{context.first_name}}<br><br>
+    <b>last name :</b>{{context.last_name}}<br><br>
+    <b>classes :</b>{{context.classes}}<br><br>
+    <b>id :</b>{{context.id}}<br><br>
+    <b>subject :</b>{{context.subject}}<br><br>
+    <b>Date of Birth :</b>{{context.dob}}<br><br>
+    <b>contact no :</b>{{context.contact_no}}<br><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register form</title>
+    <style>
+        form
+        {
+            text-align: center;
+            border: 2px solid black;
+            display: table;
+            margin:10% 30%;
+        }
+
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+</head>
+<body>
+{% for message in messages %}
+    <div class="alert alert-{{message.tags}}" role="document">
+        <p>{{message}}</p>
+    </div>
+    {% endfor %}
+    <form action="{% url 'registration2' data='teacher' %}" method="post" enctype="multipart/form-data">
+        <p>
+        <label for="first_name">First name</label>
+        <input type="text" class="input" name="first_name" required minlength="3" ><br><br>
+    </p>
+        <label for="last_name">Last name</label>
+        <input type="text" class="input" name="last_name" required minlength="3"><br><br>
+
+        <label for="id">Id</label>
+        <input type="text" name="id" required minlength="4"><br><br>
+
+        <label for="classes">classes taught</label>
+        <input type="text" name="classes" required><br><br>
+
+        <label for="subject">subject</label>
+        <input type="text" name="subject" required><br><br>
+
+        <label for="profile_pic">profile pic</label>
+        <input type="file" accept="image/jpeg,image/png" required name="profile_pic"><br><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" required><br><br>
+
+        <label for="contact_no">contact no</label>
+        <input type="text" name="contact_no" required><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register form</title>
+    <style>
+        form
+        {
+            text-align: center;
+            border: 2px solid black;
+            display: table;
+            margin:10% 30%;
+        }
+        
+       
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+</head>
+<body>
+{% for message in messages %}
+    <div class="alert alert-{{message.tags}}" role="document">
+        <p>{{message}}</p>
+    </div>
+    {% endfor %}
+    <form action="{% url 'registration2' data='student' %}" method="post" enctype="multipart/form-data">
+        <p>
+        <label for="first_name">First name</label>
+        <input type="text" class="input" name="first_name" required minlength="3" ><br><br>
+    </p>
+        <label for="last_name">Last name</label>
+        <input type="text" class="input" name="last_name" required minlength="3"><br><br>
+
+        <label for="standard">standard</label>
+        <select name="standard">
+            <option>1<sup>st</sup></option>
+            <option>2<sup>nd</sup></option>
+            <option>3<sup>rd</sup></option>
+            <option>4<sup>th</sup></option>
+            <option>5<sup>th</sup></option>
+            <option>6<sup>th</sup></option>
+            <option>7<sup>th</sup></option>
+            <option>8<sup>th</sup></option>
+            <option>9<sup>th</sup></option>
+            <option>10<sup>th</sup></option>
+        </select><br><br>
+
+        <label for="section">section</label>
+        <select name="section">
+            <option>section-A</option>
+            <option>section-B</option>
+            <option>section-C</option>
+        
+        </select><br><br>
+
+
+        <label for="stream">stream</label>
+        <input type="text" name="stream" required><br><br>
+
+        <label for="rollno">roll no</label>
+        <input type="text" name="rollno" required><br><br>
+
+        <label for="profile_pic">profile pic</label>
+        <input type="file" accept="image/jpeg,image/png" required name="profile_pic"><br><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" required><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student profile page</title>
+</head>
+<style>
+    body
+    {
+        text-align: center;
+    }
+</style>
+<body>
+<div>
+        <img src="{{context.profile_pic.url}}" style="height:100px;width:100px;border-radius: 50%;"><br><br>
+    <b>first name :</b>{{context.first_name}}<br><br>
+    <b>last name :</b>{{context.last_name}}<br><br>
+    <b>standard :</b>{{context.standard}}<br><br>
+    <b>section :</b>{{context.section}}<br><br>
+    <b>stream :</b>{{context.stream}}<br><br>
+    <b>rollno :</b>{{context.rollno}}<br><br>
+    <b>Date of Birth :</b>{{context.dob}}<br><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign in</title>
+    <style>
+        *
+        {
+            margin: 10px;
+        }
+        form
+        {
+            text-align: center;
+            border: 2px solid black;
+            display: block;
+            margin:10% 30%;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+</head>
+<body>
+{% for message in messages %}
+    <div class="alert alert-{{message.tags}}" role="document">
+        <p>{{message}}</p>
+    </div>
+    {% endfor %}
+    <form action="{% url 'signin3' data=context %}" method="post">
+
+        {% if context == 'student' %}
+        <label for="rollno">roll no</label>
+        <input type="text" name="rollno" required><br><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" required><br><br>
+                <button type="submit">signin</button>
+        {% endif %}
+        {% if context == 'teacher' %}
+        <label for="id">id</label>
+        <input type="text" name="id" required><br><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" required><br><br>
+        <button type="submit">signin</button>
+        {% endif %}
+
+    </form>
+</body>
+</html>
