@@ -1,1 +1,11 @@
 # intellifydjangoproject
+![Screenshot (16)](https://user-images.githubusercontent.com/104727432/182301405-6a37f924-4d7e-4875-b828-5482f54f5542.png)
+![Screenshot (16)](https://user-images.githubusercontent.com/104727432/182301524-55aec3b6-a71b-4bf0-a585-efd08fb29581.png)
+![Screenshot (69)](https://user-images.githubusercontent.com/104727432/182301543-1da5fd7c-7c9f-4ed3-b798-3e41d4b3e701.png)
+![Screenshot (70)](https://user-images.githubusercontent.com/104727432/182301574-a9910c14-56f5-42ec-909d-37ab1b5b0df3.png)
+![Screenshot (71)](https://user-images.githubusercontent.com/104727432/182301587-1d3131b2-d46a-49ff-95b6-a188810c5507.png)
+![Screenshot (72)](https://user-images.githubusercontent.com/104727432/182301597-69a8fcb8-3dfc-47c6-bb4c-d56b8edfc20d.png)
+![Screenshot (73)](https://user-images.githubusercontent.com/104727432/182301618-49727b63-b3af-494b-a525-b51c5fb477d1.png)
+![Screenshot (74)](https://user-images.githubusercontent.com/104727432/182301626-93df9651-ae7e-4e57-8cb0-bdf564b7c5c3.png)
+![Screenshot (75)](https://user-images.githubusercontent.com/104727432/182301635-5647fcb5-99d6-482d-a572-e5f113229f70.png)
+![Screenshot (77)](https://user-images.githubusercontent.com/104727432/182301648-a8e8d4ad-02f1-49f5-9341-78366a5e0d5a.png)
